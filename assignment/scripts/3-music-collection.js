@@ -21,8 +21,14 @@ addToCollection(myCollection, 'Moondance', 'Van Morrison', 1970);
 addToCollection(myCollection, 'Let It Enfold You', 'Senses Fail', 2004);
 console.log(myCollection);
 
-//loop through collection
-//for (album of )
+//showCollection function
+function showCollection(collection){
+  //loop through collection
+  for (album of collection){
+    console.log(album);
+  }
+};
+showCollection(myCollection);
 
 
 
