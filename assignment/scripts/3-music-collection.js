@@ -2,6 +2,7 @@ console.log('***** Music Collection *****')
 // Safe Zone -- Write code below this line
 
 let myCollection = [];
+
 console.log('my collection includes', this.myCollection);
 
 // {
@@ -19,10 +20,16 @@ function addToCollection(collection, title, artist, yearPublished) {
     artist: artist,
     yearPublished: yearPublished,
   };
-  collection.push(album);
+  myCollection.push(album);
+  //collection.push(album);
   return album;
 };
-console.log(`my new collection has ${addToCollection('classicRock', 'Rumours', 'Fleetwood MAc', 1977)}`)
+console.log(`1 my new collection has ${addToCollection('classicRock', 'Rumours', 'Fleetwood Mac', 1977)}`)
+console.log(`1 my new collection has ${addToCollection('classicRock', 'Candy-O', 'The Cars', 1979)}`)
+console.log(`1 my new collection has ${addToCollection('hipHop', 'Very Necessary', 'Salt-N-Pepa', 1993)}`)
+console.log(`1 my new collection has ${addToCollection('emo', 'Tell All Your Friends', 'Taking Back Sunday', 2002)}`)
+console.log(`1 my new collection has ${addToCollection('classicRock', 'Moondance', 'Van Morrison', 1970)}`)
+console.log(`1 my new collection has ${addToCollection('emo', 'Let It Enfold You', 'Senses Fail', 2004)}`)
 
 myCollection.push(addToCollection);
 console.log(myCollection);
