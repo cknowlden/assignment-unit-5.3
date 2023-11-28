@@ -4,40 +4,29 @@ console.log('***** Music Collection *****')
 let myCollection = [];
 console.log('my collection includes', this.myCollection);
 
-let album = [
-  {
-  title: 'Rumours',
-  artist: 'Fleetwood Mac',
-  yearPublished: 1977,
- },
-]
-
-console.log('first album', album)
-
-
-
-
+// {
+//   title: 'Rumours',
+//   artist: 'Fleetwood Mac',
+//   yearPublished: 1977,
+//  },
 
 
 function addToCollection(collection, title, artist, yearPublished) {
-const album = {
-  myCollection: [],
-  title: '',
-  artist: '',
-  yearPublished: 9
-}
-//myCollection.push(album1);
-}
-//console.log(album1.title)
-console.log(`my stuff, ${addToCollection(['pupp'], 'am', 'struggling', 9)}`);
+  console.log('in collection function');
+  let album = {
+    collection: collection,
+    title: title,
+    artist: artist,
+    yearPublished: yearPublished,
+  };
+  collection.push(album);
+  return album;
+};
+console.log(`my new collection has ${addToCollection('classicRock', 'Rumours', 'Fleetwood MAc', 1977)}`)
 
+myCollection.push(addToCollection);
+console.log(myCollection);
 
-
-
-
-//console.log('album1', album1);
-console.log('my collection now includes', this.myCollection);
-console.log(addToCollection());
 
 
 
