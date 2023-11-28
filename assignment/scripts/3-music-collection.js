@@ -30,7 +30,20 @@ function showCollection(collection){
 };
 showCollection(myCollection);
 
-
+//findByArtist function
+function findByArtist(collection, artist){
+  //console.log('in findByArtist function');
+  const newArtist = [];
+  //console.log('new artist array', newArtist);
+  for (artist of collection){
+    if (collection.artist === artist){
+    console.log(artist);
+    newArtist.push(artist);
+    }
+  }
+  return newArtist;
+}
+findByArtist(myCollection, 'Fleetwood Mac');
 
 
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
