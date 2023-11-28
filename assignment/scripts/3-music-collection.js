@@ -19,17 +19,16 @@ addToCollection(myCollection, 'Very Necessary', 'Salt-N-Pepa', 1993);
 addToCollection(myCollection, 'Tell All Your Friends', 'Taking Back Sunday', 2002);
 addToCollection(myCollection, 'Moondance', 'Van Morrison', 1970);
 addToCollection(myCollection, 'Let It Enfold You', 'Senses Fail', 2004);
-console.log(myCollection);
+console.log('my collection includes:', myCollection);
 
 //showCollection function
 function showCollection(collection){
   //loop through collection
   for (album of collection){
-    console.log(album);
+    console.log(JSON.stringify(album));
   }
 };
 showCollection(myCollection);
-
 
 
 
