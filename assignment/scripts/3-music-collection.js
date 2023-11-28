@@ -35,8 +35,8 @@ function findByArtist(collection, artist){
   //console.log('in findByArtist function');
   const newArtist = [];
   //console.log('new artist array', newArtist);
-  for (artist of collection){
-    if (collection.artist === artist){
+  for (album of collection){
+    if (album.artist === artist){
     console.log(artist);
     newArtist.push(artist);
     }
