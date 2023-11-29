@@ -24,7 +24,7 @@ console.log('my collection includes:', myCollection);
 //showCollection function
 function showCollection(collection){
   //loop through collection
-  for (album of collection){
+  for (let album of collection){
     console.log(JSON.stringify(album));
   }
 };
@@ -35,10 +35,10 @@ function findByArtist(collection, artist){
   //console.log('in findByArtist function');
   const newArtist = [];
   //console.log('new artist array', newArtist);
-  for (album of collection){
+  for (let album of collection){
     if (album.artist === artist){
     console.log(artist);
-    newArtist.push(artist);
+    newArtist.push(album.artist);
     }
   }
   return newArtist;
